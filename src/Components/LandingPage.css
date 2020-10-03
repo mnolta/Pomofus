@@ -1,0 +1,226 @@
+.Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-width: 550px;
+  height: 100vh;
+  background-color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #30266b;
+}
+
+.Heading {
+  width: 100%;
+  min-height: 87px;
+  font-size: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffff;
+}
+.Heading span {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+}
+.settings-spans {
+  justify-content: flex-end;
+}
+.settings-spans span {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+.isflex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
+}
+.flex-3 {
+  flex: 3;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.font-20 {
+  font-size: 20px;
+}
+.font-14 {
+  font-size: 14px;
+  font-weight: 300;
+}
+.font-24 {
+  font-size: 24px;
+}
+.marginTxl {
+  margin-top: 20px;
+}
+.marginRs {
+  margin-right: 5px;
+}
+.Time {
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+}
+.time-content {
+  width: 525px;
+  min-width: 500px;
+  height: 398px;
+  background-color: #ffffff;
+  box-shadow: -6px 6px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
+.time-setting {
+  padding: 5px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+
+  color: #000000;
+}
+.time-pomodoro {
+  height: 70%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.time-pomodoro .time-value {
+  display: flex;
+  width: 100%;
+  font-size: 44px;
+  align-items: center;
+  justify-content: center;
+}
+.time-value .time-pomodoro-session {
+  color: rgba(0, 0, 0, 0.6);
+}
+.time-pomodoro .time-value #time-left {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.start-button {
+  background: none;
+  border: none;
+}
+.reset-button {
+  background: none;
+  border: none;
+}
+
+.Main button {
+  outline: none;
+  cursor: pointer;
+}
+
+.Main .increment-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+}
+
+/*
+Switch button css
+*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #25d804;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #25d804;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(22px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*
+Switch button css end
+*/
